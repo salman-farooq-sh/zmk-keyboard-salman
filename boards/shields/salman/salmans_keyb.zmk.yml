@@ -1,6 +1,6 @@
 file_format: "1"
 id: salmans_keyb
-name: Salman's Keyb
+name: "Keyb of Salman"
 type: shield
 url: https://github.com/salman-farooq-sh/zmk-keyboard-salman
 requires: [pro_micro]

@@ -2,6 +2,6 @@ if SHIELD_SALMANS_KEYB
 
 # Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
-    default "Salman's Keyb"
+    default "Keyb of Salman"
 
 endif
