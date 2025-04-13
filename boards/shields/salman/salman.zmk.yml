@@ -1,0 +1,8 @@
+file_format: "1"
+id: salman
+name: Salman's Keyb
+type: shield
+url: https://github.com/salman-farooq-sh/zmk-keyboard-salman
+requires: [pro_micro]
+features:
+  - keys
