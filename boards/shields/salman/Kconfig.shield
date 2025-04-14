@@ -1,2 +1,2 @@
-config SHIELD_SALMANS_KEYB
-    def_bool $(shields_list_contains,salmans_keyb)
+config SHIELD_SALMANS_BOARD
+    def_bool $(shields_list_contains,salmans_board)
