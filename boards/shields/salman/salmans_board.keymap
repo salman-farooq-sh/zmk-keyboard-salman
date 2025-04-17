@@ -21,11 +21,21 @@
 			bindings = <
 				&bt BT_CLR        &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &none    &none         &none         &none     &none &none  &none  &sys_reset &bootloader &none
 				&bt BT_CLR_ALL    &none        &none         &none         &none         &none             &none    &none         &none         &none     &none &none  &none  &trans     &none
-				&none             &none        &none         &none         &none         &none             &kp F14  &kp LC(PG_UP) &kp LC(PG_DN) &none     &none &none  &none  &none      &none
+				&none             &none        &none         &none         &none         &none             &kp F14  &kp LC(PG_UP) &kp LC(PG_DN) &test     &none &none  &none  &none      &none
 				&kp LC(LS(PG_UP)) &none        &none         &none         &none         &kp LC(LS(PG_DN)) &kp LEFT &kp DOWN      &kp UP        &kp RIGHT &none &none  &trans &none
 				&trans            &none        &none         &none         &kp C_AL_CALC &kp K_AGAIN       &kp DEL  &none         &kp HOME      &kp END   &none &trans &none  &none
 				&none             &none        &none         &trans        &trans        &trans            &trans   &trans        &none         &none     &none &none  &none
 			>;
 		};
 	};
+
+    macros {
+        test: test {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp H &kp O &kp W &kp A &kp R &kp E &kp Y &kp O &kp U &kp B &kp R &kp O &kp RET>
+                ;
+        };
+    };
 };
